@@ -14,6 +14,194 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://alliander.com/esm/IEC-CIM/Core#</Import>
     <Import>http://alliander.com/esm/IEC-CIM/Domain#</Import>
+    <Declaration>
+        <ObjectProperty IRI="BusNameMarker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TopologicalIsland"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BaseVoltage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TopologicalNode.pInjection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TopologicalNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TopologicalNode.qInjection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TopologicalNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Terminal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="BusNameMarker.priority"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TopologicalNodes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BusNameMarker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ConnectivityNodes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TopologicalIsland"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="BusNameMarker"/>
+        <Class IRI="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TopologicalIsland"/>
+        <Class IRI="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TopologicalNode"/>
+        <Class IRI="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BaseVoltage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="TopologicalNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BusNameMarker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="TopologicalNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ConnectivityNodes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="TopologicalNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Terminal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="TopologicalNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TopologicalIsland"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="TopologicalNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TopologicalNode"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BusNameMarker"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TopologicalNode.pInjection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BusNameMarker"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TopologicalNode.qInjection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="TopologicalNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TopologicalNodes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="TopologicalIsland"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BaseVoltage"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Core#BaseVoltage"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BusNameMarker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BusNameMarker"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ConnectivityNodes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Terminal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TopologicalIsland"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TopologicalNode"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TopologicalNode.pInjection"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#ActivePower"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TopologicalNode.qInjection"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TopologicalNodes"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="BusNameMarker.priority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BusNameMarker"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="BusNameMarker.priority"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
 </Ontology>
 
 
