@@ -19,6 +19,12 @@
         <DataProperty IRI="ReactivePower.value"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="Length.multiplier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Length.value"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="Frequency.value"/>
     </Declaration>
     <Declaration>
@@ -49,6 +55,9 @@
         <ObjectProperty IRI="Frequency.multiplier"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="Length.unit"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="UnitSymbol.V"/>
     </Declaration>
     <Declaration>
@@ -68,6 +77,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="ApparentPower.Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Length"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="ReactivePower.multiplier"/>
@@ -97,19 +109,19 @@
         <NamedIndividual IRI="UnitSymbol.Hz"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="UnitSymbol.W"/>
+        <ObjectProperty IRI="ApparentPower.unit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="ApparentPower.unit"/>
+        <NamedIndividual IRI="UnitSymbol.W"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="UnitMultiplier.M"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="ReactivePower.unit"/>
+        <ObjectProperty IRI="Voltage.multiplier"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="Voltage.multiplier"/>
+        <ObjectProperty IRI="ReactivePower.unit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="UnitSymbol.VAr"/>
@@ -239,6 +251,20 @@
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="Length.multiplier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Length"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Length.unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Length"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="ReactivePower.multiplier"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -330,6 +356,20 @@
         </ObjectMaxCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="Length.multiplier"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="UnitMultiplier"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Length.unit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="UnitSymbol"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="ReactivePower.multiplier"/>
         <ObjectMaxCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -393,6 +433,13 @@
         </ObjectSomeValuesFrom>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="Length.value"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Length"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="ReactivePower.value"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -423,6 +470,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="Frequency.value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Length.value"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>

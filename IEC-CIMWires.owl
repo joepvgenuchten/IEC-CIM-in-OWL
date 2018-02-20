@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://alliander.com/esm/IEC-CIM/Wires#"
+     xml:base="http://alliander.com/esm/IEC-CIM/Wires"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://alliander.com/esm/IEC-CIM/Wires#">
+        <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Core#"/>
+        <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Conductor.length -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Conductor.length">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Conductor"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Length"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#PowerTransformerEnd -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformerEnd">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Conductor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#BusbarSection -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#BusbarSection">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Connector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Conductor -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Conductor">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Connector -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Connector">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#PowerTransformerEnd -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformerEnd">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
