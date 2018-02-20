@@ -1,0 +1,246 @@
+@prefix : <http://alliander.com/esm/IEC-CIM/Domain##> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://alliander.com/esm/IEC-CIM/Domain#> .
+
+<http://alliander.com/esm/IEC-CIM/Domain#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://alliander.com/esm/IEC-CIM/Domain#ApparentPower.multiplier
+<http://alliander.com/esm/IEC-CIM/Domain#ApparentPower.multiplier> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty owl:topObjectProperty ;
+                                                                                 owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#ApparentPower>
+                                                                               ] ;
+                                                                   rdfs:range [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty owl:topObjectProperty ;
+                                                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
+                                                                              ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#ApparentPower.unit
+<http://alliander.com/esm/IEC-CIM/Domain#ApparentPower.unit> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty owl:topObjectProperty ;
+                                                                           owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#ApparentPower>
+                                                                         ] ;
+                                                             rdfs:range [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty owl:topObjectProperty ;
+                                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
+                                                                        ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Frequency.multiplier
+<http://alliander.com/esm/IEC-CIM/Domain#Frequency.multiplier> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty owl:topObjectProperty ;
+                                                                             owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#Frequency>
+                                                                           ] ;
+                                                               rdfs:range [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty owl:topObjectProperty ;
+                                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                            owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
+                                                                          ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Frequency.unit
+<http://alliander.com/esm/IEC-CIM/Domain#Frequency.unit> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty owl:topObjectProperty ;
+                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#Frequency>
+                                                                     ] ;
+                                                         rdfs:range [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty owl:topObjectProperty ;
+                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
+                                                                    ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Seconds.multiplier
+<http://alliander.com/esm/IEC-CIM/Domain#Seconds.multiplier> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty owl:topObjectProperty ;
+                                                                           owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#Seconds>
+                                                                         ] ;
+                                                             rdfs:range [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty owl:topObjectProperty ;
+                                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
+                                                                        ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Seconds.unit
+<http://alliander.com/esm/IEC-CIM/Domain#Seconds.unit> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty owl:topObjectProperty ;
+                                                                     owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#Seconds>
+                                                                   ] ;
+                                                       rdfs:range [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty owl:topObjectProperty ;
+                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
+                                                                  ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Voltage.multiplier
+<http://alliander.com/esm/IEC-CIM/Domain#Voltage.multiplier> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty owl:topObjectProperty ;
+                                                                           owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#Voltage>
+                                                                         ] ;
+                                                             rdfs:range [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty owl:topObjectProperty ;
+                                                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
+                                                                        ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Voltage.unit
+<http://alliander.com/esm/IEC-CIM/Domain#Voltage.unit> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty owl:topObjectProperty ;
+                                                                     owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#Voltage>
+                                                                   ] ;
+                                                       rdfs:range [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty owl:topObjectProperty ;
+                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
+                                                                  ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://alliander.com/esm/IEC-CIM/Domain#ApparentPower.Value
+<http://alliander.com/esm/IEC-CIM/Domain#ApparentPower.Value> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty owl:topObjectProperty ;
+                                                                            owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#ApparentPower>
+                                                                          ] ;
+                                                              rdfs:range xsd:float .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Frequency.value
+<http://alliander.com/esm/IEC-CIM/Domain#Frequency.value> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty owl:topObjectProperty ;
+                                                                        owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#Frequency>
+                                                                      ] ;
+                                                          rdfs:range xsd:float .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier
+<http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier> rdf:type owl:DatatypeProperty .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Voltage.value
+<http://alliander.com/esm/IEC-CIM/Domain#Voltage.value> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty owl:topObjectProperty ;
+                                                                      owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Domain#Voltage>
+                                                                    ] ;
+                                                        rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://alliander.com/esm/IEC-CIM/Domain#ApparentPower
+<http://alliander.com/esm/IEC-CIM/Domain#ApparentPower> rdf:type owl:Class .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Frequency
+<http://alliander.com/esm/IEC-CIM/Domain#Frequency> rdf:type owl:Class .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Seconds
+<http://alliander.com/esm/IEC-CIM/Domain#Seconds> rdf:type owl:Class .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier
+<http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier> rdf:type owl:Class ;
+                                                         owl:equivalentClass [ rdf:type owl:Class ;
+                                                                               owl:oneOf ( <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.G>
+                                                                                           <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.M>
+                                                                                           <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.T>
+                                                                                           <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.k>
+                                                                                           <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.none>
+                                                                                         )
+                                                                             ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol
+<http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ rdf:type owl:Class ;
+                                                                           owl:oneOf ( <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.Hz>
+                                                                                       <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.V>
+                                                                                       <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.W>
+                                                                                       <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.none>
+                                                                                     )
+                                                                         ] .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#Voltage
+<http://alliander.com/esm/IEC-CIM/Domain#Voltage> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.G
+<http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.G> rdf:type owl:NamedIndividual ,
+                                                                    <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier> .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.M
+<http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.M> rdf:type owl:NamedIndividual ,
+                                                                    <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier> .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.T
+<http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.T> rdf:type owl:NamedIndividual ,
+                                                                    <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier> .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.k
+<http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.k> rdf:type owl:NamedIndividual ,
+                                                                    <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier> .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.none
+<http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier.none> rdf:type owl:NamedIndividual ,
+                                                                       <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier> .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.Hz
+<http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.Hz> rdf:type owl:NamedIndividual ,
+                                                                 <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol> .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.V
+<http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.V> rdf:type owl:NamedIndividual ,
+                                                                <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol> .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.W
+<http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.W> rdf:type owl:NamedIndividual ,
+                                                                <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol> .
+
+
+###  http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.none
+<http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol.none> rdf:type owl:NamedIndividual ,
+                                                                   <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol> .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
