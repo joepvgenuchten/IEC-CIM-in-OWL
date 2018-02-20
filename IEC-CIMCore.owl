@@ -1,1103 +1,1518 @@
-@prefix : <http://alliander.com/esm/IEC-CIM/Core##> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://alliander.com/esm/IEC-CIM/Core#> .
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://alliander.com/esm/IEC-CIM/Core#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://alliander.com/esm/IEC-CIM/Core#">
+    <Prefix name="" IRI="http://alliander.com/esm/IEC-CIM/Core##"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://alliander.com/esm/IEC-CIM/Domain#</Import>
+    <Declaration>
+        <DataProperty IRI="Equipment.normallyInService"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BusbarConfiguration.doubleBus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Feeder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IdentifiedObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BasicIntervalSchedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CurveStyle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.xUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BasicIntervalSchedule.value2Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EquipmentContainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BasicIntervalSchedule.value2Multiplier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Terminal.phases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ACDCTerminal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="TimePoints"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SubGeographicalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PowerSystemResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RegularTimePoint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BusbarConfiguration.singleBus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="RegularIntervalSchedule.timeStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="IntervalSchedule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.xMultiplier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CurveData.y2value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BaseFrequency.frequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BasePower"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="NormalEnergizedFeeder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Regions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RegularTimePoint.value2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ConnectivityNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Region"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="OperatingParticipant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GeographicalRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ACDCTerminal.sequenceNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Terminal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BusbarConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="IdentifiedObject.mRID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IrregularTimePoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Equipment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Name.description"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="PowerSystemResources"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="IdentifiedObject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BreakerConfiguration.SingleBreaker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BusbarConfiguration.mainWithTransfer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Bay.busbarConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="CurveStyle.constantYValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RegularIntervalSchedule.endTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Names"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RegularTimePoint.sequenceNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhaseCode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BreakerConfiguration.noBreaker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="NameType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.y3Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Substation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Name.name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ReportingGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.y2Multiplier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="NormalEnergizingSubstation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PhaseCode.B"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="PSRType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Bay.bayEnergyMeasFlag"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Equipments"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="CurveDatas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BreakerConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BaseVoltage.nominalVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Equipment.networkAnalysisEnabled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ConnectivityNodeContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CurveData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Terminals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CurveData.y1value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ConnectivityNodes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RegularTimePoint.value1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PhaseCode.C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IrregularIntervalSchedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OperatingShare"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.y2Unit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Equipment.aggregate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="BasicIntervalSchedule.startTime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="CurveStyle.straightLineYValues"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BreakerConfiguration.breakerAndAHalf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.curveStyle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConnectivityNodeContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Curve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConductingEquipment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BasicIntervalSchedule.value1Multiplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Equipment.inService"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BusbarConfiguration.ringBus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BasePower.basePower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BaseFrequency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="IdentifiedObject.name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="VoltageLevel.lowVoltageLimit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ReportingGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NameType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="CurveData.xvalue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="IrregularTimePoint.time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ACDCTerminal.connected"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.y1Unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.y3Multiplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="VoltageLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BaseVoltage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BreakerConfiguration.doubleBreaker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ConductingEquipment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BasicIntervalSchedule.value1Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConnectivityNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="EquipmentContainer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RegularIntervalSchedule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="VoltageLevel.highVoltageLimit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PSRType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OperatingParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="NormalHeadFeeder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PhaseCode.A"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="OperatingShare"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="PowerSystemResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Curve.y1Multiplier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="NormalHeadTerminal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="IdentifiedObject.description"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="BreakerConfiguration"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="BreakerConfiguration.SingleBreaker"/>
+            <NamedIndividual IRI="BreakerConfiguration.noBreaker"/>
+            <NamedIndividual IRI="BreakerConfiguration.breakerAndAHalf"/>
+            <NamedIndividual IRI="BreakerConfiguration.doubleBreaker"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="BusbarConfiguration"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="BusbarConfiguration.singleBus"/>
+            <NamedIndividual IRI="BusbarConfiguration.doubleBus"/>
+            <NamedIndividual IRI="BusbarConfiguration.mainWithTransfer"/>
+            <NamedIndividual IRI="BusbarConfiguration.ringBus"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="CurveStyle"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="CurveStyle.straightLineYValues"/>
+            <NamedIndividual IRI="CurveStyle.constantYValue"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="PhaseCode"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="PhaseCode.C"/>
+            <NamedIndividual IRI="PhaseCode.B"/>
+            <NamedIndividual IRI="PhaseCode.A"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="ACDCTerminal"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BaseFrequency"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BasePower"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BaseVoltage"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BasicIntervalSchedule"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Bay"/>
+        <Class IRI="EquipmentContainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConductingEquipment"/>
+        <Class IRI="Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConnectivityNode"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConnectivityNodeContainer"/>
+        <Class IRI="PowerSystemResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Curve"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Equipment"/>
+        <Class IRI="PowerSystemResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EquipmentContainer"/>
+        <Class IRI="ConnectivityNodeContainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Feeder"/>
+        <Class IRI="EquipmentContainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GeographicalRegion"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IrregularIntervalSchedule"/>
+        <Class IRI="BasicIntervalSchedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OperatingParticipant"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PSRType"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PowerSystemResource"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RegularIntervalSchedule"/>
+        <Class IRI="BasicIntervalSchedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReportingGroup"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SubGeographicalRegion"/>
+        <Class IRI="IdentifiedObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Substation"/>
+        <Class IRI="EquipmentContainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Terminal"/>
+        <Class IRI="ACDCTerminal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="VoltageLevel"/>
+        <Class IRI="EquipmentContainer"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="BreakerConfiguration"/>
+        <NamedIndividual IRI="BreakerConfiguration.SingleBreaker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BreakerConfiguration"/>
+        <NamedIndividual IRI="BreakerConfiguration.breakerAndAHalf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BreakerConfiguration"/>
+        <NamedIndividual IRI="BreakerConfiguration.doubleBreaker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BreakerConfiguration"/>
+        <NamedIndividual IRI="BreakerConfiguration.noBreaker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BusbarConfiguration"/>
+        <NamedIndividual IRI="BusbarConfiguration.doubleBus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BusbarConfiguration"/>
+        <NamedIndividual IRI="BusbarConfiguration.mainWithTransfer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BusbarConfiguration"/>
+        <NamedIndividual IRI="BusbarConfiguration.ringBus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BusbarConfiguration"/>
+        <NamedIndividual IRI="BusbarConfiguration.singleBus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CurveStyle"/>
+        <NamedIndividual IRI="CurveStyle.constantYValue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CurveStyle"/>
+        <NamedIndividual IRI="CurveStyle.straightLineYValues"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PhaseCode"/>
+        <NamedIndividual IRI="PhaseCode.A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PhaseCode"/>
+        <NamedIndividual IRI="PhaseCode.B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PhaseCode"/>
+        <NamedIndividual IRI="PhaseCode.C"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="ConductingEquipment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="ConnectivityNodes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="Equipments"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="PowerSystemResource"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="Terminal.phases"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="ConnectivityNodeContainer"/>
+        <ObjectProperty IRI="ConnectivityNodes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="Curve"/>
+        <ObjectProperty IRI="CurveDatas"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="EquipmentContainer"/>
+        <ObjectProperty IRI="Equipments"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="NormalEnergizedFeeder"/>
+        <ObjectProperty IRI="NormalEnergizingSubstation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="NormalHeadFeeder"/>
+        <ObjectProperty IRI="NormalHeadTerminal"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="PSRType"/>
+        <ObjectProperty IRI="PowerSystemResources"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BaseFrequency.frequency"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BaseFrequency"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BasePower.basePower"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BasePower"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BaseVoltage.nominalVoltage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BaseVoltage"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BasicIntervalSchedule.value1Multiplier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BasicIntervalSchedule"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BasicIntervalSchedule.value1Unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BasicIntervalSchedule"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BasicIntervalSchedule.value2Multiplier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BasicIntervalSchedule"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BasicIntervalSchedule.value2Unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BasicIntervalSchedule"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Bay.busbarConfiguration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Bay"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ConductingEquipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Terminal"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ConnectivityNode"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Terminal"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ConnectivityNodeContainer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ConnectivityNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ConnectivityNodes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ConnectivityNodeContainer"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="CurveData"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.curveStyle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.xMultiplier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.xUnit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.y1Multiplier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.y1Unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.y2Multiplier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.y2Unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.y3Multiplier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Curve.y3Unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="CurveDatas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="EquipmentContainer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Equipment"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Equipments"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="EquipmentContainer"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="IdentifiedObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Name"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="IntervalSchedule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IrregularTimePoint"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="IrregularTimePoint.time"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IrregularTimePoint"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="NameType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Name"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Names"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IdentifiedObject"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Names"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="NameType"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="NormalEnergizedFeeder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Substation"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="NormalEnergizingSubstation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Feeder"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="NormalHeadFeeder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Terminal"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="NormalHeadTerminal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Feeder"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="OperatingParticipant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="OperatingShare"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="OperatingShare"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="OperatingParticipant"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="PSRType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="PowerSystemResource"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="PowerSystemResource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ReportingGroup"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="PowerSystemResources"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="PSRType"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Region"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="SubGeographicalRegion"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Region"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Substation"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Regions"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="GeographicalRegion"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="RegularIntervalSchedule.timeStep"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="RegularIntervalSchedule"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ReportingGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="PowerSystemResource"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Terminal.phases"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Terminal"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Terminals"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ConductingEquipment"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Terminals"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ConnectivityNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="TimePoints"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IrregularIntervalSchedule"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="VoltageLevel.highVoltageLimit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="VoltageLevel"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="VoltageLevel.lowVoltageLimit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="VoltageLevel"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BaseFrequency.frequency"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#Frequency"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BasePower.basePower"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#ApparentPower"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BaseVoltage.nominalVoltage"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#Voltage"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BasicIntervalSchedule.value1Multiplier"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BasicIntervalSchedule.value1Unit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BasicIntervalSchedule.value2Multiplier"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BasicIntervalSchedule.value2Unit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Bay.busbarConfiguration"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BusbarConfiguration"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ConductingEquipment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ConnectivityNode"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ConnectivityNode"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ConnectivityNode"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ConnectivityNodeContainer"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ConnectivityNodeContainer"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ConnectivityNodes"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ConnectivityNode"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Curve"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.curveStyle"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="CurveStyle"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.xMultiplier"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.xUnit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.y1Multiplier"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.y1Unit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.y2Multiplier"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.y2Unit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.y3Multiplier"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Curve.y3Unit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="CurveDatas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="CurveData"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="EquipmentContainer"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="EquipmentContainer"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Equipments"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Equipment"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="IdentifiedObject"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IdentifiedObject"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="IntervalSchedule"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IrregularIntervalSchedule"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="IrregularTimePoint.time"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#Seconds"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="NameType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="NameType"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Names"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Name"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="NormalEnergizedFeeder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Feeder"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="NormalEnergizingSubstation"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Substation"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="NormalHeadFeeder"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Feeder"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="NormalHeadTerminal"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Terminal"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="OperatingParticipant"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="OperatingParticipant"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="OperatingShare"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="OperatingShare"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="PSRType"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="PSRType"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="PowerSystemResource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="PowerSystemResource"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="PowerSystemResources"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="PowerSystemResource"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Region"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="GeographicalRegion"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Region"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="SubGeographicalRegion"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Regions"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="SubGeographicalRegion"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="RegularIntervalSchedule.timeStep"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#Seconds"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ReportingGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ReportingGroup"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Terminal.phases"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="PhaseCode"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Terminals"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Terminal"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="TimePoints"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IrregularTimePoint"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="VoltageLevel.highVoltageLimit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#Voltage"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="VoltageLevel.lowVoltageLimit"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="http://alliander.com/esm/IEC-CIM/Domain#Voltage"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Equipment.networkAnalysisEnabled"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="ACDCTerminal.connected"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ACDCTerminal"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ACDCTerminal.sequenceNumber"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="ACDCTerminal"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="BasicIntervalSchedule.startTime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="BasicIntervalSchedule"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Bay.bayEnergyMeasFlag"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Bay"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CurveData.xvalue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="CurveData"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CurveData.y1value"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="CurveData"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="CurveData.y2value"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="CurveData"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Equipment.aggregate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Equipment"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Equipment.inService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Equipment"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Equipment.networkAnalysisEnabled"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Equipment"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Equipment.normallyInService"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Equipment"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="IdentifiedObject.description"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IdentifiedObject"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="IdentifiedObject.mRID"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IdentifiedObject"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="IdentifiedObject.name"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="IdentifiedObject"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Name.description"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Name"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Name.name"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="Name"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="RegularIntervalSchedule.endTime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="RegularIntervalSchedule"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="RegularTimePoint.sequenceNumber"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="RegularTimePoint"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="RegularTimePoint.value1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="RegularTimePoint"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="RegularTimePoint.value2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="RegularTimePoint"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="ACDCTerminal.connected"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ACDCTerminal.sequenceNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="BasicIntervalSchedule.startTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Bay.bayEnergyMeasFlag"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CurveData.xvalue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CurveData.y1value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="CurveData.y2value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Equipment.aggregate"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Equipment.inService"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Equipment.networkAnalysisEnabled"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Equipment.normallyInService"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="IdentifiedObject.description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="IdentifiedObject.mRID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="IdentifiedObject.name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Name.description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Name.name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="RegularIntervalSchedule.endTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="RegularTimePoint.sequenceNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="RegularTimePoint.value1"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="RegularTimePoint.value2"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
-<http://alliander.com/esm/IEC-CIM/Core#> rdf:type owl:Ontology ;
-                                          owl:imports <http://alliander.com/esm/IEC-CIM/Domain#> .
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://alliander.com/esm/IEC-CIM/Core#BaseFrequency.frequency
-<http://alliander.com/esm/IEC-CIM/Core#BaseFrequency.frequency> rdf:type owl:ObjectProperty ;
-                                                                rdfs:domain [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty owl:topObjectProperty ;
-                                                                              owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#BaseFrequency>
-                                                                            ] ;
-                                                                rdfs:range [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty owl:topObjectProperty ;
-                                                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                             owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#Frequency>
-                                                                           ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BasePower.basePower
-<http://alliander.com/esm/IEC-CIM/Core#BasePower.basePower> rdf:type owl:ObjectProperty ;
-                                                            rdfs:domain [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty owl:topObjectProperty ;
-                                                                          owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#BasePower>
-                                                                        ] ;
-                                                            rdfs:range [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty owl:topObjectProperty ;
-                                                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                         owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#ApparentPower>
-                                                                       ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BaseVoltage.nominalVoltage
-<http://alliander.com/esm/IEC-CIM/Core#BaseVoltage.nominalVoltage> rdf:type owl:ObjectProperty ;
-                                                                   rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty owl:topObjectProperty ;
-                                                                                 owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#BaseVoltage>
-                                                                               ] ;
-                                                                   rdfs:range [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty owl:topObjectProperty ;
-                                                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#Voltage>
-                                                                              ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Multiplier
-<http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Multiplier> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty owl:topObjectProperty ;
-                                                                                             owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule>
-                                                                                           ] ;
-                                                                               rdfs:range [ rdf:type owl:Restriction ;
-                                                                                            owl:onProperty owl:topObjectProperty ;
-                                                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                            owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
-                                                                                          ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Unit
-<http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Unit> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule>
-                                                                                     ] ;
-                                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
-                                                                                    ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Multiplier
-<http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Multiplier> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty owl:topObjectProperty ;
-                                                                                             owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule>
-                                                                                           ] ;
-                                                                               rdfs:range [ rdf:type owl:Restriction ;
-                                                                                            owl:onProperty owl:topObjectProperty ;
-                                                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                            owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
-                                                                                          ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Unit
-<http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Unit> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule>
-                                                                                     ] ;
-                                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
-                                                                                    ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Bay.busbarConfiguration
-<http://alliander.com/esm/IEC-CIM/Core#Bay.busbarConfiguration> rdf:type owl:ObjectProperty ;
-                                                                rdfs:domain [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty owl:topObjectProperty ;
-                                                                              owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Bay>
-                                                                            ] ;
-                                                                rdfs:range [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty owl:topObjectProperty ;
-                                                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                             owl:onClass <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration>
-                                                                           ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment
-<http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment> rdf:type owl:ObjectProperty ;
-                                                            rdfs:subPropertyOf owl:topObjectProperty ;
-                                                            rdfs:domain [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty owl:topObjectProperty ;
-                                                                          owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Terminal>
-                                                                        ] ;
-                                                            rdfs:range [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty owl:topObjectProperty ;
-                                                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                         owl:onClass <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode>
-                                                                       ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode
-<http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Terminal>
-                                                                     ] ;
-                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode>
-                                                                    ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer
-<http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer> rdf:type owl:ObjectProperty ;
-                                                                  owl:inverseOf <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodes> ;
-                                                                  rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty owl:topObjectProperty ;
-                                                                                owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode>
-                                                                              ] ;
-                                                                  rdfs:range [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty owl:topObjectProperty ;
-                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                               owl:onClass <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer>
-                                                                             ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodes
-<http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodes> rdf:type owl:ObjectProperty ;
-                                                          rdfs:subPropertyOf owl:topObjectProperty ;
-                                                          rdfs:domain [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer>
-                                                                      ] ;
-                                                          rdfs:range [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode>
-                                                                     ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve
-<http://alliander.com/esm/IEC-CIM/Core#Curve> rdf:type owl:ObjectProperty ;
-                                              owl:inverseOf <http://alliander.com/esm/IEC-CIM/Core#CurveDatas> ;
-                                              rdfs:domain [ rdf:type owl:Restriction ;
-                                                            owl:onProperty owl:topObjectProperty ;
-                                                            owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#CurveData>
-                                                          ] ;
-                                              rdfs:range [ rdf:type owl:Restriction ;
-                                                           owl:onProperty owl:topObjectProperty ;
-                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                           owl:onClass <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                         ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.curveStyle
-<http://alliander.com/esm/IEC-CIM/Core#Curve.curveStyle> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                     ] ;
-                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Core#CurveStyle>
-                                                                    ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.xMultiplier
-<http://alliander.com/esm/IEC-CIM/Core#Curve.xMultiplier> rdf:type owl:ObjectProperty ;
-                                                          rdfs:domain [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                      ] ;
-                                                          rdfs:range [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                       owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
-                                                                     ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.xUnit
-<http://alliander.com/esm/IEC-CIM/Core#Curve.xUnit> rdf:type owl:ObjectProperty ;
-                                                    rdfs:domain [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty owl:topObjectProperty ;
-                                                                  owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                ] ;
-                                                    rdfs:range [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty owl:topObjectProperty ;
-                                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                 owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
-                                                               ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.y1Multiplier
-<http://alliander.com/esm/IEC-CIM/Core#Curve.y1Multiplier> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty owl:topObjectProperty ;
-                                                                         owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                       ] ;
-                                                           rdfs:range [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                        owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
-                                                                      ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.y1Unit
-<http://alliander.com/esm/IEC-CIM/Core#Curve.y1Unit> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty owl:topObjectProperty ;
-                                                                   owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                 ] ;
-                                                     rdfs:range [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty owl:topObjectProperty ;
-                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                  owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
-                                                                ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.y2Multiplier
-<http://alliander.com/esm/IEC-CIM/Core#Curve.y2Multiplier> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty owl:topObjectProperty ;
-                                                                         owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                       ] ;
-                                                           rdfs:range [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                        owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
-                                                                      ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.y2Unit
-<http://alliander.com/esm/IEC-CIM/Core#Curve.y2Unit> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty owl:topObjectProperty ;
-                                                                   owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                 ] ;
-                                                     rdfs:range [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty owl:topObjectProperty ;
-                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                  owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
-                                                                ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.y3Multiplier
-<http://alliander.com/esm/IEC-CIM/Core#Curve.y3Multiplier> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty owl:topObjectProperty ;
-                                                                         owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                       ] ;
-                                                           rdfs:range [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                        owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier>
-                                                                      ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve.y3Unit
-<http://alliander.com/esm/IEC-CIM/Core#Curve.y3Unit> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty owl:topObjectProperty ;
-                                                                   owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                                 ] ;
-                                                     rdfs:range [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty owl:topObjectProperty ;
-                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                  owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol>
-                                                                ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#CurveDatas
-<http://alliander.com/esm/IEC-CIM/Core#CurveDatas> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty owl:topObjectProperty ;
-                                                                 owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Curve>
-                                                               ] ;
-                                                   rdfs:range [ rdf:type owl:Restriction ;
-                                                                owl:onProperty owl:topObjectProperty ;
-                                                                owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#CurveData>
-                                                              ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer
-<http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer> rdf:type owl:ObjectProperty ;
-                                                           owl:inverseOf <http://alliander.com/esm/IEC-CIM/Core#Equipments> ;
-                                                           rdfs:domain [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty owl:topObjectProperty ;
-                                                                         owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Equipment>
-                                                                       ] ;
-                                                           rdfs:range [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                        owl:onClass <http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer>
-                                                                      ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Equipments
-<http://alliander.com/esm/IEC-CIM/Core#Equipments> rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                                   rdfs:domain [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty owl:topObjectProperty ;
-                                                                 owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer>
-                                                               ] ;
-                                                   rdfs:range [ rdf:type owl:Restriction ;
-                                                                owl:onProperty owl:topObjectProperty ;
-                                                                owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Equipment>
-                                                              ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject
-<http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Name>
-                                                                     ] ;
-                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject>
-                                                                    ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IntervalSchedule
-<http://alliander.com/esm/IEC-CIM/Core#IntervalSchedule> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint>
-                                                                     ] ;
-                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule>
-                                                                    ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint.time
-<http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint.time> rdf:type owl:ObjectProperty ;
-                                                                rdfs:domain [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty owl:topObjectProperty ;
-                                                                              owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint>
-                                                                            ] ;
-                                                                rdfs:range [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty owl:topObjectProperty ;
-                                                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                             owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#Seconds>
-                                                                           ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#NameType
-<http://alliander.com/esm/IEC-CIM/Core#NameType> rdf:type owl:ObjectProperty ;
-                                                 rdfs:domain [ rdf:type owl:Restriction ;
-                                                               owl:onProperty owl:topObjectProperty ;
-                                                               owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Name>
-                                                             ] ;
-                                                 rdfs:range [ rdf:type owl:Restriction ;
-                                                              owl:onProperty owl:topObjectProperty ;
-                                                              owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#NameType>
-                                                            ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Names
-<http://alliander.com/esm/IEC-CIM/Core#Names> rdf:type owl:ObjectProperty ;
-                                              rdfs:domain [ rdf:type owl:Restriction ;
-                                                            owl:onProperty owl:topObjectProperty ;
-                                                            owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject>
-                                                          ] ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty owl:topObjectProperty ;
-                                                            owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#NameType>
-                                                          ] ;
-                                              rdfs:range [ rdf:type owl:Restriction ;
-                                                           owl:onProperty owl:topObjectProperty ;
-                                                           owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Name>
-                                                         ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#NormalEnergizedFeeder
-<http://alliander.com/esm/IEC-CIM/Core#NormalEnergizedFeeder> rdf:type owl:ObjectProperty ;
-                                                              owl:inverseOf <http://alliander.com/esm/IEC-CIM/Core#NormalEnergizingSubstation> ;
-                                                              rdfs:domain [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty owl:topObjectProperty ;
-                                                                            owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Substation>
-                                                                          ] ;
-                                                              rdfs:range [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty owl:topObjectProperty ;
-                                                                           owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Feeder>
-                                                                         ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#NormalEnergizingSubstation
-<http://alliander.com/esm/IEC-CIM/Core#NormalEnergizingSubstation> rdf:type owl:ObjectProperty ;
-                                                                   rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty owl:topObjectProperty ;
-                                                                                 owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Feeder>
-                                                                               ] ;
-                                                                   rdfs:range [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty owl:topObjectProperty ;
-                                                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                owl:onClass <http://alliander.com/esm/IEC-CIM/Core#Substation>
-                                                                              ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#NormalHeadFeeder
-<http://alliander.com/esm/IEC-CIM/Core#NormalHeadFeeder> rdf:type owl:ObjectProperty ;
-                                                         owl:inverseOf <http://alliander.com/esm/IEC-CIM/Core#NormalHeadTerminal> ;
-                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Terminal>
-                                                                     ] ;
-                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Core#Feeder>
-                                                                    ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#NormalHeadTerminal
-<http://alliander.com/esm/IEC-CIM/Core#NormalHeadTerminal> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty owl:topObjectProperty ;
-                                                                         owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Feeder>
-                                                                       ] ;
-                                                           rdfs:range [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                        owl:onClass <http://alliander.com/esm/IEC-CIM/Core#Terminal>
-                                                                      ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant
-<http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant> rdf:type owl:ObjectProperty ;
-                                                             rdfs:domain [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty owl:topObjectProperty ;
-                                                                           owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#OperatingShare>
-                                                                         ] ;
-                                                             rdfs:range [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty owl:topObjectProperty ;
-                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                          owl:onClass <http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant>
-                                                                        ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#OperatingShare
-<http://alliander.com/esm/IEC-CIM/Core#OperatingShare> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain [ rdf:type owl:Restriction ;
-                                                                     owl:onProperty owl:topObjectProperty ;
-                                                                     owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant>
-                                                                   ] ;
-                                                       rdfs:range [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty owl:topObjectProperty ;
-                                                                    owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#OperatingShare>
-                                                                  ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PSRType
-<http://alliander.com/esm/IEC-CIM/Core#PSRType> rdf:type owl:ObjectProperty ;
-                                                owl:inverseOf <http://alliander.com/esm/IEC-CIM/Core#PowerSystemResources> ;
-                                                rdfs:domain [ rdf:type owl:Restriction ;
-                                                              owl:onProperty owl:topObjectProperty ;
-                                                              owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource>
-                                                            ] ;
-                                                rdfs:range [ rdf:type owl:Restriction ;
-                                                             owl:onProperty owl:topObjectProperty ;
-                                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass <http://alliander.com/esm/IEC-CIM/Core#PSRType>
-                                                           ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource
-<http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource> rdf:type owl:ObjectProperty ;
-                                                            rdfs:subPropertyOf owl:topObjectProperty ;
-                                                            rdfs:domain [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty owl:topObjectProperty ;
-                                                                          owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ReportingGroup>
-                                                                        ] ;
-                                                            rdfs:range [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty owl:topObjectProperty ;
-                                                                         owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource>
-                                                                       ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PowerSystemResources
-<http://alliander.com/esm/IEC-CIM/Core#PowerSystemResources> rdf:type owl:ObjectProperty ;
-                                                             rdfs:domain [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty owl:topObjectProperty ;
-                                                                           owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#PSRType>
-                                                                         ] ;
-                                                             rdfs:range [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty owl:topObjectProperty ;
-                                                                          owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource>
-                                                                        ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Region
-<http://alliander.com/esm/IEC-CIM/Core#Region> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain [ rdf:type owl:Restriction ;
-                                                             owl:onProperty owl:topObjectProperty ;
-                                                             owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion>
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty owl:topObjectProperty ;
-                                                             owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Substation>
-                                                           ] ;
-                                               rdfs:range [ rdf:type owl:Restriction ;
-                                                            owl:onProperty owl:topObjectProperty ;
-                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                            owl:onClass <http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion>
-                                                          ] ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty owl:topObjectProperty ;
-                                                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                            owl:onClass <http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion>
-                                                          ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Regions
-<http://alliander.com/esm/IEC-CIM/Core#Regions> rdf:type owl:ObjectProperty ;
-                                                rdfs:domain [ rdf:type owl:Restriction ;
-                                                              owl:onProperty owl:topObjectProperty ;
-                                                              owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion>
-                                                            ] ;
-                                                rdfs:range [ rdf:type owl:Restriction ;
-                                                             owl:onProperty owl:topObjectProperty ;
-                                                             owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion>
-                                                           ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.timeStep
-<http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.timeStep> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule>
-                                                                                     ] ;
-                                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                      owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#Seconds>
-                                                                                    ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ReportingGroup
-<http://alliander.com/esm/IEC-CIM/Core#ReportingGroup> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain [ rdf:type owl:Restriction ;
-                                                                     owl:onProperty owl:topObjectProperty ;
-                                                                     owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource>
-                                                                   ] ;
-                                                       rdfs:range [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty owl:topObjectProperty ;
-                                                                    owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ReportingGroup>
-                                                                  ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Terminal.phases
-<http://alliander.com/esm/IEC-CIM/Core#Terminal.phases> rdf:type owl:ObjectProperty ;
-                                                        rdfs:subPropertyOf owl:topObjectProperty ;
-                                                        rdfs:domain [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                      owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Terminal>
-                                                                    ] ;
-                                                        rdfs:range [ rdf:type owl:Restriction ;
-                                                                     owl:onProperty owl:topObjectProperty ;
-                                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                     owl:onClass <http://alliander.com/esm/IEC-CIM/Core#PhaseCode>
-                                                                   ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Terminals
-<http://alliander.com/esm/IEC-CIM/Core#Terminals> rdf:type owl:ObjectProperty ;
-                                                  rdfs:domain [ rdf:type owl:Restriction ;
-                                                                owl:onProperty owl:topObjectProperty ;
-                                                                owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment>
-                                                              ] ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty owl:topObjectProperty ;
-                                                                owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode>
-                                                              ] ;
-                                                  rdfs:range [ rdf:type owl:Restriction ;
-                                                               owl:onProperty owl:topObjectProperty ;
-                                                               owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Terminal>
-                                                             ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#TimePoints
-<http://alliander.com/esm/IEC-CIM/Core#TimePoints> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty owl:topObjectProperty ;
-                                                                 owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule>
-                                                               ] ;
-                                                   rdfs:range [ rdf:type owl:Restriction ;
-                                                                owl:onProperty owl:topObjectProperty ;
-                                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                owl:onClass <http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint>
-                                                              ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.highVoltageLimit
-<http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.highVoltageLimit> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty owl:topObjectProperty ;
-                                                                                    owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#VoltageLevel>
-                                                                                  ] ;
-                                                                      rdfs:range [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty owl:topObjectProperty ;
-                                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                   owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#Voltage>
-                                                                                 ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.lowVoltageLimit
-<http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.lowVoltageLimit> rdf:type owl:ObjectProperty ;
-                                                                     rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty owl:topObjectProperty ;
-                                                                                   owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#VoltageLevel>
-                                                                                 ] ;
-                                                                     rdfs:range [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty owl:topObjectProperty ;
-                                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                  owl:onClass <http://alliander.com/esm/IEC-CIM/Domain#Voltage>
-                                                                                ] .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal.connected
-<http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal.connected> rdf:type owl:DatatypeProperty ;
-                                                               rdfs:domain [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty owl:topObjectProperty ;
-                                                                             owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal>
-                                                                           ] ;
-                                                               rdfs:range xsd:boolean .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal.sequenceNumber
-<http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal.sequenceNumber> rdf:type owl:DatatypeProperty ;
-                                                                    rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty owl:topObjectProperty ;
-                                                                                  owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal>
-                                                                                ] ;
-                                                                    rdfs:range xsd:integer .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.startTime
-<http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.startTime> rdf:type owl:DatatypeProperty ;
-                                                                        rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                                      owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule>
-                                                                                    ] ;
-                                                                        rdfs:range xsd:dateTime .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Bay.bayEnergyMeasFlag
-<http://alliander.com/esm/IEC-CIM/Core#Bay.bayEnergyMeasFlag> rdf:type owl:DatatypeProperty ;
-                                                              rdfs:domain [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty owl:topObjectProperty ;
-                                                                            owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Bay>
-                                                                          ] ;
-                                                              rdfs:range xsd:boolean .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#CurveData.xvalue
-<http://alliander.com/esm/IEC-CIM/Core#CurveData.xvalue> rdf:type owl:DatatypeProperty ;
-                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#CurveData>
-                                                                     ] ;
-                                                         rdfs:range xsd:float .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#CurveData.y1value
-<http://alliander.com/esm/IEC-CIM/Core#CurveData.y1value> rdf:type owl:DatatypeProperty ;
-                                                          rdfs:domain [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#CurveData>
-                                                                      ] ;
-                                                          rdfs:range xsd:float .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#CurveData.y2value
-<http://alliander.com/esm/IEC-CIM/Core#CurveData.y2value> rdf:type owl:DatatypeProperty ;
-                                                          rdfs:domain [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty owl:topObjectProperty ;
-                                                                        owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#CurveData>
-                                                                      ] ;
-                                                          rdfs:range xsd:float .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Equipment.aggregate
-<http://alliander.com/esm/IEC-CIM/Core#Equipment.aggregate> rdf:type owl:DatatypeProperty ;
-                                                            rdfs:domain [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty owl:topObjectProperty ;
-                                                                          owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Equipment>
-                                                                        ] ;
-                                                            rdfs:range xsd:boolean .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Equipment.inService
-<http://alliander.com/esm/IEC-CIM/Core#Equipment.inService> rdf:type owl:DatatypeProperty ;
-                                                            rdfs:domain [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty owl:topObjectProperty ;
-                                                                          owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Equipment>
-                                                                        ] ;
-                                                            rdfs:range xsd:boolean .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Equipment.networkAnalysisEnabled
-<http://alliander.com/esm/IEC-CIM/Core#Equipment.networkAnalysisEnabled> rdf:type owl:DatatypeProperty ;
-                                                                         rdfs:subPropertyOf owl:topDataProperty ;
-                                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Equipment>
-                                                                                     ] ;
-                                                                         rdfs:range xsd:boolean .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Equipment.normallyInService
-<http://alliander.com/esm/IEC-CIM/Core#Equipment.normallyInService> rdf:type owl:DatatypeProperty ;
-                                                                    rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty owl:topObjectProperty ;
-                                                                                  owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Equipment>
-                                                                                ] ;
-                                                                    rdfs:range xsd:boolean .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.description
-<http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.description> rdf:type owl:DatatypeProperty ;
-                                                                     rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty owl:topObjectProperty ;
-                                                                                   owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject>
-                                                                                 ] ;
-                                                                     rdfs:range xsd:string .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.mRID
-<http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.mRID> rdf:type owl:DatatypeProperty ;
-                                                              rdfs:domain [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty owl:topObjectProperty ;
-                                                                            owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject>
-                                                                          ] ;
-                                                              rdfs:range xsd:string .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.name
-<http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.name> rdf:type owl:DatatypeProperty ;
-                                                              rdfs:domain [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty owl:topObjectProperty ;
-                                                                            owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject>
-                                                                          ] ;
-                                                              rdfs:range xsd:string .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Name.description
-<http://alliander.com/esm/IEC-CIM/Core#Name.description> rdf:type owl:DatatypeProperty ;
-                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty owl:topObjectProperty ;
-                                                                       owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Name>
-                                                                     ] ;
-                                                         rdfs:range xsd:string .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Name.name
-<http://alliander.com/esm/IEC-CIM/Core#Name.name> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain [ rdf:type owl:Restriction ;
-                                                                owl:onProperty owl:topObjectProperty ;
-                                                                owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#Name>
-                                                              ] ;
-                                                  rdfs:range xsd:string .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.endTime
-<http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.endTime> rdf:type owl:DatatypeProperty ;
-                                                                        rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                                      owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule>
-                                                                                    ] ;
-                                                                        rdfs:range xsd:dateTime .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.sequenceNumber
-<http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.sequenceNumber> rdf:type owl:DatatypeProperty ;
-                                                                        rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty owl:topObjectProperty ;
-                                                                                      owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint>
-                                                                                    ] ;
-                                                                        rdfs:range xsd:integer .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.value1
-<http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.value1> rdf:type owl:DatatypeProperty ;
-                                                                rdfs:domain [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty owl:topObjectProperty ;
-                                                                              owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint>
-                                                                            ] ;
-                                                                rdfs:range xsd:float .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.value2
-<http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.value2> rdf:type owl:DatatypeProperty ;
-                                                                rdfs:domain [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty owl:topObjectProperty ;
-                                                                              owl:someValuesFrom <http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint>
-                                                                            ] ;
-                                                                rdfs:range xsd:float .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal
-<http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BaseFrequency
-<http://alliander.com/esm/IEC-CIM/Core#BaseFrequency> rdf:type owl:Class ;
-                                                      rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BasePower
-<http://alliander.com/esm/IEC-CIM/Core#BasePower> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BaseVoltage
-<http://alliander.com/esm/IEC-CIM/Core#BaseVoltage> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule
-<http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Bay
-<http://alliander.com/esm/IEC-CIM/Core#Bay> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration
-<http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration> rdf:type owl:Class ;
-                                                             owl:equivalentClass [ rdf:type owl:Class ;
-                                                                                   owl:oneOf ( <http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.SingleBreaker>
-                                                                                               <http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.breakerAndAHalf>
-                                                                                               <http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.doubleBreaker>
-                                                                                               <http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.noBreaker>
-                                                                                             )
-                                                                                 ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration
-<http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration> rdf:type owl:Class ;
-                                                            owl:equivalentClass [ rdf:type owl:Class ;
-                                                                                  owl:oneOf ( <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.doubleBus>
-                                                                                              <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.mainWithTransfer>
-                                                                                              <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.ringBus>
-                                                                                              <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.singleBus>
-                                                                                            )
-                                                                                ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment
-<http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#Equipment> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode
-<http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode> rdf:type owl:Class ;
-                                                         rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer
-<http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Curve
-<http://alliander.com/esm/IEC-CIM/Core#Curve> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#CurveData
-<http://alliander.com/esm/IEC-CIM/Core#CurveData> rdf:type owl:Class .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#CurveStyle
-<http://alliander.com/esm/IEC-CIM/Core#CurveStyle> rdf:type owl:Class ;
-                                                   owl:equivalentClass [ rdf:type owl:Class ;
-                                                                         owl:oneOf ( <http://alliander.com/esm/IEC-CIM/Core#CurveStyle.constantYValue>
-                                                                                     <http://alliander.com/esm/IEC-CIM/Core#CurveStyle.straightLineYValues>
-                                                                                   )
-                                                                       ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Equipment
-<http://alliander.com/esm/IEC-CIM/Core#Equipment> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer
-<http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer> rdf:type owl:Class ;
-                                                           rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Feeder
-<http://alliander.com/esm/IEC-CIM/Core#Feeder> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion
-<http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion> rdf:type owl:Class ;
-                                                           rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject
-<http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> rdf:type owl:Class .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule
-<http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint
-<http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint> rdf:type owl:Class .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Name
-<http://alliander.com/esm/IEC-CIM/Core#Name> rdf:type owl:Class .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#NameType
-<http://alliander.com/esm/IEC-CIM/Core#NameType> rdf:type owl:Class .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant
-<http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant> rdf:type owl:Class ;
-                                                             rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#OperatingShare
-<http://alliander.com/esm/IEC-CIM/Core#OperatingShare> rdf:type owl:Class .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PSRType
-<http://alliander.com/esm/IEC-CIM/Core#PSRType> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PhaseCode
-<http://alliander.com/esm/IEC-CIM/Core#PhaseCode> rdf:type owl:Class ;
-                                                  owl:equivalentClass [ rdf:type owl:Class ;
-                                                                        owl:oneOf ( <http://alliander.com/esm/IEC-CIM/Core#PhaseCode.A>
-                                                                                    <http://alliander.com/esm/IEC-CIM/Core#PhaseCode.B>
-                                                                                    <http://alliander.com/esm/IEC-CIM/Core#PhaseCode.C>
-                                                                                  )
-                                                                      ] .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource
-<http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule
-<http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint
-<http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint> rdf:type owl:Class .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#ReportingGroup
-<http://alliander.com/esm/IEC-CIM/Core#ReportingGroup> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion
-<http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Substation
-<http://alliander.com/esm/IEC-CIM/Core#Substation> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#Terminal
-<http://alliander.com/esm/IEC-CIM/Core#Terminal> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#VoltageLevel
-<http://alliander.com/esm/IEC-CIM/Core#VoltageLevel> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer> .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.SingleBreaker
-<http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.SingleBreaker> rdf:type owl:NamedIndividual ,
-                                                                                    <http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.breakerAndAHalf
-<http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.breakerAndAHalf> rdf:type owl:NamedIndividual ,
-                                                                                      <http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.doubleBreaker
-<http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.doubleBreaker> rdf:type owl:NamedIndividual ,
-                                                                                    <http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.noBreaker
-<http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration.noBreaker> rdf:type owl:NamedIndividual ,
-                                                                                <http://alliander.com/esm/IEC-CIM/Core#BreakerConfiguration> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.doubleBus
-<http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.doubleBus> rdf:type owl:NamedIndividual ,
-                                                                               <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.mainWithTransfer
-<http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.mainWithTransfer> rdf:type owl:NamedIndividual ,
-                                                                                      <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.ringBus
-<http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.ringBus> rdf:type owl:NamedIndividual ,
-                                                                             <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.singleBus
-<http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration.singleBus> rdf:type owl:NamedIndividual ,
-                                                                               <http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#CurveStyle.constantYValue
-<http://alliander.com/esm/IEC-CIM/Core#CurveStyle.constantYValue> rdf:type owl:NamedIndividual ,
-                                                                           <http://alliander.com/esm/IEC-CIM/Core#CurveStyle> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#CurveStyle.straightLineYValues
-<http://alliander.com/esm/IEC-CIM/Core#CurveStyle.straightLineYValues> rdf:type owl:NamedIndividual ,
-                                                                                <http://alliander.com/esm/IEC-CIM/Core#CurveStyle> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PhaseCode.A
-<http://alliander.com/esm/IEC-CIM/Core#PhaseCode.A> rdf:type owl:NamedIndividual ,
-                                                             <http://alliander.com/esm/IEC-CIM/Core#PhaseCode> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PhaseCode.B
-<http://alliander.com/esm/IEC-CIM/Core#PhaseCode.B> rdf:type owl:NamedIndividual ,
-                                                             <http://alliander.com/esm/IEC-CIM/Core#PhaseCode> .
-
-
-###  http://alliander.com/esm/IEC-CIM/Core#PhaseCode.C
-<http://alliander.com/esm/IEC-CIM/Core#PhaseCode.C> rdf:type owl:NamedIndividual ,
-                                                             <http://alliander.com/esm/IEC-CIM/Core#PhaseCode> .
-
-
-###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

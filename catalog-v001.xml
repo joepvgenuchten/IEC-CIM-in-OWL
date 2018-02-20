@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Core#" uri="IEC-CIMCore.owl"/>
+    <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Topology#" uri="IEC-CIMCore.owl"/>
+    <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Domain#" uri="IEC-CIMDomain.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1519116895077" name="http://alliander.com/esm/IEC-CIM/Core#" uri="IEC-CIMCore.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519116895077" name="http://alliander.com/esm/IEC-CIM/Domain#" uri="IEC-CIMDomain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519116895077" name="http://alliander.com/esm/IEC-CIM/Topology#" uri="IEC-CIMTopology.owl"/>
+    </group>
+</catalog>
