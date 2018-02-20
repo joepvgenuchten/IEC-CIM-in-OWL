@@ -23,13 +23,13 @@ model for a complete picture of the information standard.
 # Method
 Manually recreate IEC-CIM concepts in Protégé according to UML-> OWL transformation as suggested by the OMG ODM specification.
 
-UML Package          ->   Ontology (separate files, use imports for cross package references)
-UML Class            ->   OWL class
-UML Attribute        ->   primitives: Data Property
+- UML Package          ->   Ontology (separate files, use imports for cross package references)
+- UML Class            ->   OWL class
+- UML Attribute        ->   primitives: Data Property
                           Complex/CIM data types: Object Property
-UML Association      ->   Object Property 
-UML enumerated class ->   Owl class with instances (owl:oneOf, see https://stackoverflow.com/questions/28004964/using-owloneof-in-protege for method)
-UML specialization   ->   owl:subclass
+- UML Association      ->   Object Property 
+- UML enumerated class ->   Owl class with instances (owl:oneOf, see https://stackoverflow.com/questions/28004964/using-owloneof-in-protege for method)
+- UML specialization   ->   owl:subclass
 
 
 # Naming Conventions
