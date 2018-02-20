@@ -5,9 +5,9 @@
     <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Topology#" uri="IEC-CIMTopology.owl"/>
     <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Domain#" uri="IEC-CIMDomain.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1519124001690" name="http://alliander.com/esm/IEC-CIM/Core#" uri="IEC-CIMCore.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519124001690" name="http://alliander.com/esm/IEC-CIM/Domain#" uri="IEC-CIMDomain.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519124001690" name="http://alliander.com/esm/IEC-CIM/Topology#" uri="IEC-CIMTopology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519124001690" name="http://alliander.com/esm/IEC-CIM/Wires" uri="IEC-CIMWires.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519128239834" name="http://alliander.com/esm/IEC-CIM/Core" uri="IEC-CIMCore.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519128239834" name="http://alliander.com/esm/IEC-CIM/Domain" uri="IEC-CIMDomain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519128239834" name="http://alliander.com/esm/IEC-CIM/Topology" uri="IEC-CIMTopology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519128239834" name="http://alliander.com/esm/IEC-CIM/Wires" uri="IEC-CIMWires.owl"/>
     </group>
 </catalog>
