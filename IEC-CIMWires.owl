@@ -126,6 +126,14 @@
     
 
 
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Line -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Line">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer"/>
+    </owl:Class>
+    
+
+
     <!-- http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer -->
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer">

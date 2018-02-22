@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://alliander.com/esm/IEC-CIM/Assets#"
+     xml:base="http://alliander.com/esm/IEC-CIM/Assets"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://alliander.com/esm/IEC-CIM/Assets#">
+        <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Core#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#Analytic -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Assets#Analytic">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#AnalyticScore"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#AssetHealthEvent"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#Analytic"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#AnalyticScore -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Assets#AnalyticScore">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#Analytic"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#Asset"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#AnalyticScore"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#Asset -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Assets#Asset">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#AnalyticScore"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#Asset"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#AssetHealthEvent -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Assets#AssetHealthEvent">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#Analytic"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#AssetHealthEvent"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#Analytic -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Assets#Analytic">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Common#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#AnalyticScore -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Assets#AnalyticScore">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#Asset -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Assets#Asset">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#AssetContainer -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Assets#AssetContainer">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#AssetHealthEvent -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Assets#AssetHealthEvent">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Common#ActivityRecord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Assets#Facility -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Assets#Facility">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Assets#AssetContainer"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

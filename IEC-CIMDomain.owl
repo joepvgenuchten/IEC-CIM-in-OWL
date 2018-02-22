@@ -360,6 +360,34 @@
     
 
 
+    <!-- http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval.end -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval.end">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval.start -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval.start">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://alliander.com/esm/IEC-CIM/Domain#Frequency.value -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#Frequency.value">
@@ -456,6 +484,12 @@
     <!-- http://alliander.com/esm/IEC-CIM/Domain#ApparentPower -->
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Domain#ApparentPower"/>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval"/>
     
 
 

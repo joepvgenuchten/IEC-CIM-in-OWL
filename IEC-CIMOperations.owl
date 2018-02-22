@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://alliander.com/esm/IEC-CIM/Operations#"
+     xml:base="http://alliander.com/esm/IEC-CIM/Operations"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://alliander.com/esm/IEC-CIM/Operations#">
+        <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#"/>
+        <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#"/>
+        <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Core#"/>
+        <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#Faults -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#Faults">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#Fault"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#Incident -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#Incident">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Incident"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#Outage -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#Outage">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Incident"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#Outage.actualPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#Outage.actualPeriod">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#PSREvent.kind -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREvent.kind">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#PSREvent"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#TroubleTicket -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#TroubleTicket">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#UnplannedOutage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#TroubleTicket.estimatedPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#TroubleTicket.estimatedPeriod">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#Incident.cause -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#Incident.cause">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Incident"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#PlannedOutage.reason -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PlannedOutage.reason">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#PlannedOutage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#UnplannedOutage.cause -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Operations#UnplannedOutage.cause">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#UnplannedOutage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#Incident -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Operations#Incident">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Common#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#Outage -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Operations#Outage">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Common#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#PSREvent -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREvent">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Common#ActivityRecord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#PSREventKind -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.inService"/>
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.outOfService"/>
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.unknown"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#PlannedOutage -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PlannedOutage">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#UnplannedOutage -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Operations#UnplannedOutage">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.inService -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.inService">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.outOfService -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.outOfService">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.unknown -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind.unknown">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#PSREventKind"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
