@@ -24,28 +24,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Faults#Fault.phases -->
+    <!-- http://alliander.com/esm/IEC-CIM/Faults#Fault.FaultyEquipment -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Faults#Fault.phases">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#Fault"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PhaseCode"/>
-            </owl:Restriction>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://alliander.com/esm/IEC-CIM/Faults#FaultyEquipment -->
-
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Faults#FaultyEquipment">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Faults#Fault.FaultyEquipment">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -62,9 +43,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Faults#Outage -->
+    <!-- http://alliander.com/esm/IEC-CIM/Faults#Fault.Outage -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Faults#Outage">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Faults#Fault.Outage">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -76,6 +57,25 @@
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Faults#Fault.phases -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Faults#Fault.phases">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#Fault"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PhaseCode"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>

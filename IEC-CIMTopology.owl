@@ -24,9 +24,49 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Topology#BaseVoltage -->
+    <!-- http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker.TopologicalNode -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#BaseVoltage">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker.TopologicalNode">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland.TopologicalNodes -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland.TopologicalNodes">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BaseVoltage -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BaseVoltage">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -44,9 +84,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker -->
+    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BusNameMarker -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BusNameMarker">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -63,9 +103,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Topology#ConnectivityNodes -->
+    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.ConnectivityNodes -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#ConnectivityNodes">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.ConnectivityNodes">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -82,9 +122,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Topology#Terminal -->
+    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.Terminal -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#Terminal">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.Terminal">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -101,9 +141,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland -->
+    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.TopologicalIsland -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.TopologicalIsland">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -115,26 +155,6 @@
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
-            </owl:Restriction>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode -->
-
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
@@ -174,26 +194,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
-            </owl:Restriction>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://alliander.com/esm/IEC-CIM/Topology#TopologicalNodes -->
-
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNodes">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
             </owl:Restriction>
         </rdfs:range>

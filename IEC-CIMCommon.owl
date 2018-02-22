@@ -43,9 +43,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Common#ChangedDocument -->
+    <!-- http://alliander.com/esm/IEC-CIM/Common#ConfigurationEvent.ChangedDocument -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Common#ChangedDocument">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Common#ConfigurationEvent.ChangedDocument">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -63,9 +63,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Common#ConfigurationEvents -->
+    <!-- http://alliander.com/esm/IEC-CIM/Common#Document.ConfigurationEvents -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Common#ConfigurationEvents">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Common#Document.ConfigurationEvents">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -102,9 +102,9 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Common#PowerSystemResources -->
+    <!-- http://alliander.com/esm/IEC-CIM/Common#Location.PowerSystemResources -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Common#PowerSystemResources">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Common#Location.PowerSystemResources">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>

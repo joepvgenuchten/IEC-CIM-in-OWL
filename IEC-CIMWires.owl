@@ -44,9 +44,29 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer -->
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer.PowerTransformerEnd -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer.PowerTransformerEnd">
+        <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd.PowerTransformer"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd.PowerTransformer -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd.PowerTransformer">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -58,25 +78,6 @@
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer"/>
-            </owl:Restriction>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://alliander.com/esm/IEC-CIM/Wires#PowerTransformerEnd -->
-
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformerEnd">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformer"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>

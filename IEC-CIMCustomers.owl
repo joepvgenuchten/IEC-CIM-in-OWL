@@ -24,9 +24,29 @@
     
 
 
-    <!-- http://alliander.com/esm/IEC-CIM/Customers#Customer -->
+    <!-- http://alliander.com/esm/IEC-CIM/Customers#Customer.TroubleTickets -->
 
-    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Customers#Customer">
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Customers#Customer.TroubleTickets">
+        <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Customer"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#Customer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Customer -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Customer">
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
