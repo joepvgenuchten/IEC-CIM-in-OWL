@@ -35,8 +35,8 @@ Manually recreate IEC-CIM concepts in Protégé according to UML-> OWL transform
 # Naming Conventions
 - Classes                                             -> ClassName
 - attributes (whatever their representation in OWL)   -> ClassName.attributeName 
-- enumerated individual                               -> ClassName.individualNameN
-- associations                                        -> AssociciationName 
+- enumerated individual                               -> ClassName.individualName
+- associations                                        -> SourceClassName.AssociciationEndName 
 
 Note: unfortunately IEC-CIM is not consistently unique in its attribute- enumeration-, and association naming. This means tha
 In case of attribute and enumeration naming prefising the ClassName is necesary to ensure uniqueness. In the case of association names 
