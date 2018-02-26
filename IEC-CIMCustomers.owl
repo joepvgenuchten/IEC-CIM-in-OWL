@@ -30,13 +30,13 @@
         <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Customer"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#Customer.TroubleTickets"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#Customer"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#Customer.TroubleTickets"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
             </owl:Restriction>
         </rdfs:range>
@@ -49,13 +49,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Customer">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Customer"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Customer"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#Customer"/>
             </owl:Restriction>
@@ -78,12 +78,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.dateTimeOfReport -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.dateTimeOfReport">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -92,12 +87,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.resolvedDateTime -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.resolvedDateTime">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -106,12 +96,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.troubleCode -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.troubleCode">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     

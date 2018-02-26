@@ -29,13 +29,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker.TopologicalNode">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker.TopologicalNode"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker.TopologicalNode"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
@@ -49,13 +49,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland.TopologicalNodes">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland.TopologicalNodes"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalIsland.TopologicalNodes"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
             </owl:Restriction>
@@ -69,13 +69,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BaseVoltage">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BaseVoltage"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BaseVoltage"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BaseVoltage"/>
             </owl:Restriction>
@@ -89,13 +89,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BusNameMarker">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BusNameMarker"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.BusNameMarker"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker"/>
             </owl:Restriction>
         </rdfs:range>
@@ -108,13 +108,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.ConnectivityNodes">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.ConnectivityNodes"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.ConnectivityNodes"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode"/>
             </owl:Restriction>
         </rdfs:range>
@@ -127,13 +127,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.Terminal">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.Terminal"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.Terminal"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
         </rdfs:range>
@@ -146,13 +146,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.TopologicalIsland">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.TopologicalIsland"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.TopologicalIsland"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
             </owl:Restriction>
@@ -166,13 +166,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.pInjection">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.pInjection"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.pInjection"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ActivePower"/>
             </owl:Restriction>
@@ -186,13 +186,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.qInjection">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.qInjection"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#TopologicalNode.qInjection"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ReactivePower"/>
             </owl:Restriction>
@@ -215,12 +215,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker.priority -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker.priority">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Topology#BusNameMarker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     

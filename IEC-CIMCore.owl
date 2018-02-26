@@ -29,13 +29,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#BaseFrequency.frequency">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BaseFrequency.frequency"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BaseFrequency"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BaseFrequency.frequency"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Frequency"/>
             </owl:Restriction>
@@ -49,13 +49,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#BasePower.basePower">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasePower.basePower"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasePower"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasePower.basePower"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#ApparentPower"/>
             </owl:Restriction>
@@ -69,13 +69,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#BaseVoltage.nominalVoltage">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BaseVoltage.nominalVoltage"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BaseVoltage"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BaseVoltage.nominalVoltage"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Voltage"/>
             </owl:Restriction>
@@ -89,13 +89,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Multiplier">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Multiplier"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Multiplier"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
             </owl:Restriction>
@@ -109,13 +109,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Unit">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Unit"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value1Unit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
             </owl:Restriction>
@@ -129,13 +129,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Multiplier">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Multiplier"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Multiplier"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
             </owl:Restriction>
@@ -149,13 +149,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Unit">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Unit"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.value2Unit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
             </owl:Restriction>
@@ -169,13 +169,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Bay.busbarConfiguration">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Bay.busbarConfiguration"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Bay"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Bay.busbarConfiguration"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BusbarConfiguration"/>
             </owl:Restriction>
@@ -189,13 +189,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment.Terminals">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment.Terminals"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment.Terminals"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
         </rdfs:range>
@@ -209,13 +209,13 @@
         <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer.ConnectivityNodes"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode.ConnectivityNodeContainer"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode.ConnectivityNodeContainer"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer"/>
             </owl:Restriction>
@@ -229,13 +229,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode.Terminals">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode.Terminals"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode.Terminals"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
@@ -250,13 +250,13 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer.ConnectivityNodes"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNodeContainer.ConnectivityNodes"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode"/>
             </owl:Restriction>
         </rdfs:range>
@@ -270,13 +270,13 @@
         <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData.Curve"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.CurveDatas"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.CurveDatas"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData"/>
             </owl:Restriction>
         </rdfs:range>
@@ -289,13 +289,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.curveStyle">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.curveStyle"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.curveStyle"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveStyle"/>
             </owl:Restriction>
@@ -309,13 +309,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.xMultiplier">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.xMultiplier"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.xMultiplier"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
             </owl:Restriction>
@@ -329,13 +329,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.xUnit">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.xUnit"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.xUnit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
             </owl:Restriction>
@@ -349,13 +349,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.y1Multiplier">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y1Multiplier"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y1Multiplier"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
             </owl:Restriction>
@@ -369,13 +369,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.y1Unit">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y1Unit"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y1Unit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
             </owl:Restriction>
@@ -389,13 +389,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.y2Multiplier">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y2Multiplier"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y2Multiplier"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
             </owl:Restriction>
@@ -409,13 +409,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.y2Unit">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y2Unit"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y2Unit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
             </owl:Restriction>
@@ -429,13 +429,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.y3Multiplier">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y3Multiplier"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y3Multiplier"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
             </owl:Restriction>
@@ -449,13 +449,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Curve.y3Unit">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y3Unit"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve.y3Unit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
             </owl:Restriction>
@@ -469,13 +469,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#CurveData.Curve">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData.Curve"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData.Curve"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Curve"/>
             </owl:Restriction>
@@ -490,13 +490,13 @@
         <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer.Equipments"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment.EquipmentContainer"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment.EquipmentContainer"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer"/>
             </owl:Restriction>
@@ -511,13 +511,13 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer.Equipments"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer.Equipments"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
             </owl:Restriction>
         </rdfs:range>
@@ -531,13 +531,13 @@
         <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Substation.NormalEnergizedFeeder"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Feeder.NormalEnergizingSubstation"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Feeder"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Feeder.NormalEnergizingSubstation"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Substation"/>
             </owl:Restriction>
@@ -552,13 +552,13 @@
         <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.NormalHeadFeeder"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Feeder.NormalHeadTerminal"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Feeder"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Feeder.NormalHeadTerminal"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
@@ -572,13 +572,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion.Regions">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion.Regions"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion.Regions"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion"/>
             </owl:Restriction>
         </rdfs:range>
@@ -591,13 +591,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.Names">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.Names"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.Names"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name"/>
             </owl:Restriction>
         </rdfs:range>
@@ -610,13 +610,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule.TimePoints">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule.TimePoints"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule.TimePoints"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint"/>
             </owl:Restriction>
@@ -630,13 +630,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint.IntervalSchedule">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint.IntervalSchedule"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint.IntervalSchedule"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularIntervalSchedule"/>
             </owl:Restriction>
@@ -650,13 +650,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint.time">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint.time"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IrregularTimePoint.time"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Seconds"/>
             </owl:Restriction>
@@ -670,13 +670,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Name.IdentifiedObject">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name.IdentifiedObject"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name.IdentifiedObject"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
             </owl:Restriction>
@@ -690,13 +690,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Name.NameType">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name.NameType"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name.NameType"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType"/>
             </owl:Restriction>
@@ -710,13 +710,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#NameType.NameTypeAuthority">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType.NameTypeAuthority"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType.NameTypeAuthority"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority"/>
             </owl:Restriction>
@@ -730,13 +730,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#NameType.Names">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType.Names"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType.Names"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name"/>
             </owl:Restriction>
         </rdfs:range>
@@ -749,13 +749,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#NametypeAuthority.NameTypes">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NametypeAuthority.NameTypes"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NametypeAuthority.NameTypes"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType"/>
             </owl:Restriction>
         </rdfs:range>
@@ -768,13 +768,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant.OperatingShare">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant.OperatingShare"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant.OperatingShare"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#OperatingShare"/>
             </owl:Restriction>
         </rdfs:range>
@@ -787,13 +787,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#OperatingShare.OperatingParticipant">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#OperatingShare.OperatingParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#OperatingShare"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#OperatingShare.OperatingParticipant"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#OperatingParticipant"/>
             </owl:Restriction>
@@ -808,13 +808,13 @@
         <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResources.PSRType"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PSRType.PowerSystemResources"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PSRType"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PSRType.PowerSystemResources"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource"/>
             </owl:Restriction>
         </rdfs:range>
@@ -827,13 +827,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource.Location">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource.Location"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource.Location"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Common#Location"/>
             </owl:Restriction>
@@ -847,13 +847,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource.ReportingGroup">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource.ReportingGroup"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource.ReportingGroup"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ReportingGroup"/>
             </owl:Restriction>
         </rdfs:range>
@@ -866,13 +866,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResources.PSRType">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResources.PSRType"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResources.PSRType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PSRType"/>
             </owl:Restriction>
@@ -886,13 +886,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.timeStep">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.timeStep"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.timeStep"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Seconds"/>
             </owl:Restriction>
@@ -907,13 +907,13 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ReportingGroup.PowerSystemResource"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ReportingGroup"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ReportingGroup.PowerSystemResource"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource"/>
             </owl:Restriction>
         </rdfs:range>
@@ -926,13 +926,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion.Region">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion.Region"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion.Region"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#GeographicalRegion"/>
             </owl:Restriction>
@@ -946,13 +946,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Substation.NormalEnergizedFeeder">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Substation.NormalEnergizedFeeder"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Substation"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Substation.NormalEnergizedFeeder"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Feeder"/>
             </owl:Restriction>
         </rdfs:range>
@@ -965,13 +965,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Substation.Region">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Substation.Region"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Substation"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Substation.Region"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#SubGeographicalRegion"/>
             </owl:Restriction>
@@ -986,13 +986,13 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.ConductingEquipment"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.ConductingEquipment"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode"/>
             </owl:Restriction>
@@ -1006,13 +1006,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Terminal.ConnectivityNode">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.ConnectivityNode"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.ConnectivityNode"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConnectivityNode"/>
             </owl:Restriction>
@@ -1026,13 +1026,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Terminal.NormalHeadFeeder">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.NormalHeadFeeder"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.NormalHeadFeeder"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Feeder"/>
             </owl:Restriction>
@@ -1047,13 +1047,13 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.phases"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Terminal.phases"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PhaseCode"/>
             </owl:Restriction>
@@ -1067,13 +1067,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.highVoltageLimit">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.highVoltageLimit"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#VoltageLevel"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.highVoltageLimit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Voltage"/>
             </owl:Restriction>
@@ -1087,13 +1087,13 @@
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.lowVoltageLimit">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.lowVoltageLimit"/>
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#VoltageLevel"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#VoltageLevel.lowVoltageLimit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Voltage"/>
             </owl:Restriction>
@@ -1116,12 +1116,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal.connected -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal.connected">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -1130,12 +1125,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal.sequenceNumber -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal.sequenceNumber">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ACDCTerminal"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -1144,12 +1134,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.startTime -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule.startTime">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#BasicIntervalSchedule"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -1158,12 +1143,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#Bay.bayEnergyMeasFlag -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Bay.bayEnergyMeasFlag">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Bay"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Bay"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -1172,12 +1152,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#CurveData.xvalue -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#CurveData.xvalue">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -1186,12 +1161,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#CurveData.y1value -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#CurveData.y1value">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -1200,12 +1170,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#CurveData.y2value -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#CurveData.y2value">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#CurveData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -1214,12 +1179,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#Equipment.aggregate -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Equipment.aggregate">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -1228,12 +1188,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#Equipment.inService -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Equipment.inService">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -1243,12 +1198,7 @@
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Equipment.networkAnalysisEnabled">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -1257,12 +1207,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#Equipment.normallyInService -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Equipment.normallyInService">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Equipment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -1271,12 +1216,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.description -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.description">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1285,12 +1225,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.mRID -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.mRID">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1299,12 +1234,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.name -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.name">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1313,12 +1243,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#Name.description -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Name.description">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1327,12 +1252,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#Name.name -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Name.name">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1341,12 +1261,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority.description -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority.description">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1355,12 +1270,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority.name -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority.name">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameTypeAuthority"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1369,12 +1279,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.endTime -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule.endTime">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -1383,12 +1288,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.sequenceNumber -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.sequenceNumber">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularIntervalSchedule"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -1397,12 +1297,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.value1 -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.value1">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -1411,12 +1306,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.value2 -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint.value2">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Core#RegularTimePoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
