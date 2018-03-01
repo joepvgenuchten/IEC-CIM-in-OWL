@@ -589,6 +589,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.Names -->
 
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.Names">
+        <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name.IdentifiedObject"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject.Names"/>
@@ -688,6 +689,7 @@
     <!-- http://alliander.com/esm/IEC-CIM/Core#Name.NameType -->
 
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Core#Name.NameType">
+        <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#NameType.Names"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Core#Name.NameType"/>

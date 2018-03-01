@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Operations#" uri="IEC-CIMOperations.owl"/>
     <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Core#" uri="IEC-CIMCore.owl"/>
     <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Faults#" uri="IEC-CIMFaults.owl"/>
     <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Customers#" uri="IEC-CIMCustomers.owl"/>
@@ -9,14 +10,14 @@
     <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Topology#" uri="IEC-CIMTopology.owl"/>
     <uri id="Imports Wizard Entry" name="http://alliander.com/esm/IEC-CIM/Domain#" uri="IEC-CIMDomain.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Assets" uri="IEC-CIMAssets.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Common" uri="IEC-CIMCommon.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Core" uri="IEC-CIMCore.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Customers" uri="IEC-CIMCustomers.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Domain" uri="IEC-CIMDomain.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Faults" uri="IEC-CIMFaults.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Operations" uri="IEC-CIMOperations.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Topology" uri="IEC-CIMTopology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1519643772022" name="http://alliander.com/esm/IEC-CIM/Wires" uri="IEC-CIMWires.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Assets" uri="IEC-CIMAssets.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Common" uri="IEC-CIMCommon.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Core" uri="IEC-CIMCore.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Customers" uri="IEC-CIMCustomers.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Domain" uri="IEC-CIMDomain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Faults" uri="IEC-CIMFaults.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Operations" uri="IEC-CIMOperations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Topology" uri="IEC-CIMTopology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1519894717381" name="http://alliander.com/esm/IEC-CIM/Wires" uri="IEC-CIMWires.owl"/>
     </group>
 </catalog>

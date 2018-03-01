@@ -121,6 +121,67 @@
     
 
 
+    <!-- http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.multiplier -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.multiplier">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.multiplier"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.multiplier"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitMultiplier"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Electrical current with sign convention: positive flow is out of the conducting equipment into the connectivity node. Can be both AC and DC.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.uncefactUnitCode -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.uncefactUnitCode">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.uncefactUnitCode"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.unit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UncefactUnitCode"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.unit -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.unit">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.unit"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.unit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#UnitSymbol"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://alliander.com/esm/IEC-CIM/Domain#Frequency.multiplier -->
 
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#Frequency.multiplier">
@@ -350,6 +411,15 @@
     
 
 
+    <!-- http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.value -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow.value">
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval.end -->
 
     <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Domain#DateTimeInterval.end">
@@ -433,6 +503,12 @@
     <!-- http://alliander.com/esm/IEC-CIM/Domain#ApparentPower -->
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Domain#ApparentPower"/>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow"/>
     
 
 

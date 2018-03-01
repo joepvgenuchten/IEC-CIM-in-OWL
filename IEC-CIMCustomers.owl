@@ -7,6 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://alliander.com/esm/IEC-CIM/Customers#">
+        <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#"/>
         <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Core#"/>
         <owl:imports rdf:resource="http://alliander.com/esm/IEC-CIM/Common#"/>
     </owl:Ontology>
@@ -58,6 +59,25 @@
                 <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Customer"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#Customer"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Incident -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Incident">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket.Incident"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#TroubleTicket"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Customers#Customer.TroubleTickets"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Operations#Incident"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>

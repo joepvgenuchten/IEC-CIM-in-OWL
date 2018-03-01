@@ -24,6 +24,25 @@
     
 
 
+    <!-- http://alliander.com/esm/IEC-CIM/Faults#Fault.FaultCauseType -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Faults#Fault.FaultCauseType">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#Fault.FaultCauseType"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#Fault"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#Fault.FaultCauseType"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#FaultCauseType"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://alliander.com/esm/IEC-CIM/Faults#Fault.FaultyEquipment -->
 
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Faults#Fault.FaultyEquipment">
@@ -129,17 +148,19 @@
     
 
 
+    <!-- http://alliander.com/esm/IEC-CIM/Faults#FaultCauseType -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Faults#FaultCauseType">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+    </owl:Class>
+    
+
+
     <!-- http://alliander.com/esm/IEC-CIM/Faults#LineFault -->
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Faults#LineFault">
         <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Faults#Fault"/>
     </owl:Class>
-    
-
-
-    <!-- http://alliander.com/esm/IEC-CIM/Operations#Outage -->
-
-    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Operations#Outage"/>
 </rdf:RDF>
 
 

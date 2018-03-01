@@ -4,6 +4,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cimwires="http://alliander.com/esm/IEC-CIM/Wires#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://alliander.com/esm/IEC-CIM/Wires#">
@@ -24,6 +25,150 @@
     
 
 
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment.ACLineSegmentPhases -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment.ACLineSegmentPhases">
+        <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase.ACLineSegment"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment.Clamp"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp.ACLineSegment"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment.Clamp -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment.Clamp">
+        <owl:inverseOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp.ACLineSegment"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment.Clamp"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp.ACLineSegment"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase.ACLineSegment -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase.ACLineSegment">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment.Clamp"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp.ACLineSegment"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase.phase -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase.phase">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase.phase"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase.phase"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The phase connection of the wire at both ends</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#BusbarSection.ipMax -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#BusbarSection.ipMax">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#BusbarSection.ipMax"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#BusbarSection"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ProtectedSwitch.breakingCapacity"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Maximum allowable peak short-circuit current of busbar (Ipmax in the IEC 60909-0). 
+Mechanical limit of the busbar in the substation itself. Used for short circuit data exchange according to IEC 60909</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Clamp.ACLineSegment -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Clamp.ACLineSegment">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp.ACLineSegment"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp.ACLineSegment"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Clamp.lengthFromTerminal1 -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Clamp.lengthFromTerminal1">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp.lengthFromTerminal1"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Clamp.lengthFromTerminal1"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Length"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The length to the place where the clamp is located starting from side one of the line segment, i.e. the line segment terminal with sequence number equal to 1.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://alliander.com/esm/IEC-CIM/Wires#Conductor.length -->
 
     <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Conductor.length">
@@ -40,6 +185,7 @@
                 <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#Length"/>
             </owl:Restriction>
         </rdfs:range>
+        <rdfs:comment>Segment length for calculating line section capabilities</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -60,6 +206,43 @@
                 <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd"/>
             </owl:Restriction>
         </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ProtectedSwitch.breakingCapacity -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ProtectedSwitch.breakingCapacity">
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ProtectedSwitch"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ProtectedSwitch.breakingCapacity"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The maximum fault current a breaking device can break safely under prescribed conditions of use.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Switch.ratedCurrent -->
+
+    <owl:ObjectProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Switch.ratedCurrent">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Switch.ratedCurrent"/>
+                <owl:someValuesFrom rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Switch"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ProtectedSwitch.breakingCapacity"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://alliander.com/esm/IEC-CIM/Domain#CurrentFlow"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>The maximum continuous current carrying capacity in amps governed by the device material and construction.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -87,6 +270,47 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ACLineSegementPhase.sequenceNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegementPhase.sequenceNumber">
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Number designation for this line segment phase. Each line segment phase within a line segment should have a unique sequence number. This is useful for unbalanced modeling to bind the mathematical model (PhaseImpedanceData of PerLengthPhaseImpedance) with the connectivity model (this class) and the physical model (WirePosition) without tight coupling.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Switch.normalOpen -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Switch.normalOpen">
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Switch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Switch.open -->
+
+    <owl:DatatypeProperty rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Switch.open">
+        <rdfs:domain rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Switch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>The attribute tells if the switch is considered open when used as input to topology processing.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -99,6 +323,18 @@
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegment">
         <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Conductor"/>
+        <rdfs:comment>A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.
+For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.
+The BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines  may have slightly different BaseVoltage.nominalVoltages and  variation is allowed. Larger voltage difference in general requires use of an equivalent branch.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ACLineSegmentPhase">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#PowerSystemResource"/>
+        <rdfs:comment>Represents a single wire of an alternating current line segment.</rdfs:comment>
     </owl:Class>
     
 
@@ -107,6 +343,18 @@
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#BusbarSection">
         <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Connector"/>
+        <rdfs:comment>A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation. 
+Voltage measurements are typically obtained from VoltageTransformers that are connected to busbar sections. A bus bar section may have many physical terminals but for analysis is modelled with exactly one logical terminal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Clamp -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Clamp">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment"/>
+        <rdfs:comment>A Clamp is a galvanic connection at a line segment where other equipment is connected. A Clamp does not cut the line segment. 
+A Clamp is ConductingEquipment and has one Terminal with an associated ConnectivityNode. Any other ConductingEquipment can be connected to the Clamp ConnectivityNode.</rdfs:comment>
     </owl:Class>
     
 
@@ -115,6 +363,7 @@
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Conductor">
         <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment"/>
+        <rdfs:comment>Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.</rdfs:comment>
     </owl:Class>
     
 
@@ -123,6 +372,16 @@
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Connector">
         <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment"/>
+        <rdfs:comment>A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation and are modelled with a single logical terminal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Junction -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Junction">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Connector"/>
+        <rdfs:comment>A point where one or more conducting equipments are connected with zero resistance.</rdfs:comment>
     </owl:Class>
     
 
@@ -131,6 +390,24 @@
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Line">
         <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#EquipmentContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#PerLengthImpedance -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PerLengthImpedance">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#PerLengthLineParameter"/>
+        <rdfs:comment>Common type for per-length impedance electrical catalogues.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#PerLengthLineParameter -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PerLengthLineParameter">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+        <rdfs:comment>Common type for per-length electrical catalogues describing line parameters.</rdfs:comment>
     </owl:Class>
     
 
@@ -147,6 +424,50 @@
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#PowerTransformerEnd">
         <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd"/>
+        <rdfs:comment>A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.
+The impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows
+1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=0) PowerTransformerEnd has zero values for r, r0, x, and x0.
+2) for a three Terminal PowerTransformer the three PowerTransformerEnds represents a star equivalent with each leg in the star represented by r, r0, x, and x0 values.
+3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1 is the preferred way.
+4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#ProtectedSwitch -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#ProtectedSwitch">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#Switch"/>
+        <rdfs:comment>A ProtectedSwitch is a switching device that can be operated by ProtectionEquipment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.A"/>
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.B"/>
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.C"/>
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.N"/>
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.s1"/>
+                    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.s2"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Enumeration of single phase identifiers. Allows designation of single phases for both transmission and distribution equipment, circuits and loads.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#Switch -->
+
+    <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#Switch">
+        <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#ConductingEquipment"/>
+        <rdfs:comment>A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches.</rdfs:comment>
     </owl:Class>
     
 
@@ -155,7 +476,94 @@
 
     <owl:Class rdf:about="http://alliander.com/esm/IEC-CIM/Wires#TransformerEnd">
         <rdfs:subClassOf rdf:resource="http://alliander.com/esm/IEC-CIM/Core#IdentifiedObject"/>
+        <rdfs:comment>A conducting connection point of a power transformer. It corresponds to a physical transformer winding terminal.  In earlier CIM versions, the TransformerWinding class served a similar purpose, but this class is more flexible because it associates to terminal but is not a specialization of ConductingEquipment.</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Core#PhaseCode.A -->
+
+    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Core#PhaseCode.A">
+        <owl:sameAs rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.A"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Core#PhaseCode.B -->
+
+    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Core#PhaseCode.B">
+        <owl:sameAs rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.B"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Core#PhaseCode.C -->
+
+    <rdf:Description rdf:about="http://alliander.com/esm/IEC-CIM/Core#PhaseCode.C">
+        <owl:sameAs rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.C"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.A -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.A">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.B -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.B">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.C -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.C">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.N -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.N">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind"/>
+        <rdfs:comment>Neutral</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.s1 -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.s1">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind"/>
+        <rdfs:comment>Secondary phase 1.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.s2 -->
+
+    <owl:NamedIndividual rdf:about="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind.s2">
+        <rdf:type rdf:resource="http://alliander.com/esm/IEC-CIM/Wires#SinglePhaseKind"/>
+        <rdfs:comment>Secondary phase 2.</rdfs:comment>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
